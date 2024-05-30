@@ -15,10 +15,10 @@
           </div>
           <div class="col-13 header-info" >
             <div>
-                <h1>Tshepo Mofokeng</h1>
-                <p>Linkedin</p>
-                <p>address</p>
-                <p>references</p>
+                <h1>{{user.fullName}}</h1>
+                <p>{{user.phone}} | <a href="tseko9164@gmail.com">{{user.email}}</a></p>
+                <p>{{user.address}}</p>
+                <p>@references: {{user.references}}</p>
             </div>
           </div>
         </div><hr>
@@ -27,10 +27,7 @@
         <div class="row">
           <div>
             <h3 class="center">SUMMARY</h3>
-            <p class="p-description">A dedicated and driven Industrial Engineering graduate passionate about leveraging technology to drive
-                innovation, I am excited about the prospect of joining the Sanlam Data & Digital Academy. With a solid
-                foundation in Industrial Engineering and a keen interest in data analytics and digital technologies, I am
-                eager to immerse myself in real-world business cases and collaborate with industry experts at Sanlam.
+            <p class="p-description">{{user.summary}}
                 </p>
           </div>
         </div>
@@ -40,18 +37,20 @@
               <div>
                 <h3 class="center">EDUCATION</h3>
                 <div class="heading-year">
-                <p class="p-description"><b>BTech Honours Industrial Engineering</b></p>
-                <span><b>[2024-current]</b></span>
+                <p class="p-description"><b>{{education.institutionName}}</b></p>
+                <span><b>{{education.date}}</b></span>
               </div>
-                <p>University of Johannesburg, Gauteng</p><br>
+                <p>{{education.address}}</p><br>
                 <div class="heading-year">
-                    <p class="p-description"><b> BTech Industrial Engineering</b></p>
-                    <div><b>[2020-2022]</b></div>
+                    <p class="p-description"><b> {{education.institutionName2}}</b></p>
+                    <div><b>{{education.date2}}</b></div>
                   </div>
-                    <p>University of Johannesburg, Gauteng</p>
+                    <p>{{education.address}}</p>
               </div>
             </div>
     </section>
+    
+    <!-- STATIC SECTION-->
     <section class="container">
         <div class="row">
           <div>
@@ -61,21 +60,15 @@
             <span><b>[2024-current]</b></span>
           </div>
             <p>Acccenture/Uj Work Readiness Programme, Gauteng<br>  Designing, developing, and delivering new software, applications, and technology solutions.</p><br>
-            <p> <b>Key Components</b>:
-            <p>Engineering Business Systems for 4IR:
-                <ul>
-                    <li>Utilizing strategic analysis tools to design innovative business models, aligning with 4IR objectives.</li>
-                </ul>
-            </p>
-            <p>Full Stack Web Development:
-                <ul>
-                    <li>Developing proficiency in coding using JavaScript, HTML5, CSS3, React, Node.js, Express, SQL, and Python.</li>
-                </ul>
-            </p>
-            <p>Agile Rapid Skills Acquisition:
-                <ul>
-                    <li>Enhancing skills in effective planning, communication, rapid adaptation, and collaborative development through regular presentations and team collaborations.</li>
-                </ul>
+            <p> <b>Key Components</b>:</p><br>
+            <p><b>Full Stack Web Development</b>:
+                Utilizing strategic analysis tools to design innovative business models, aligning with 4IR objectives.
+            </p><br>
+            <p><b>Full Stack Web Development</b>:
+                Developing proficiency in coding using JavaScript, HTML5, CSS3, React, Node.js, Express, SQL, and Python.
+            </p><br>
+            <p><b>Agile Rapid Skills Acquisition</b>:             
+                    Enhancing skills in effective planning, communication, rapid adaptation, and collaborative development through regular presentations and team collaborations.
             </p>
           </div>
         </div>
@@ -92,17 +85,17 @@
                 <tr>
                     <td>
                         <ul>
-                            <li>Attention to Detail</li>
+                            <li>{{skills.skill1}}</li>
                         </ul>
                     </td>
                     <td>
                         <ul>
-                            <li>Analytical Skills</li>
+                            <li>{{skills.skill2}}</li>
                         </ul>
                     </td>
                     <td>
                         <ul>
-                            <li>Project Management</li>
+                            <li>{{skills.skill3}}</li>
                         </ul>
                     </td>
                 </tr>
