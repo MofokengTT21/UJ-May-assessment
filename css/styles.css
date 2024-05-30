@@ -1,0 +1,36 @@
+header {
+    margin: 15px 0 ;
+}
+
+.header-info {
+    display: grid;
+    align-items: start;
+    justify-items: start;   
+}
+
+h1 {
+    margin: 0 0 0;
+}
+p {
+    margin: -0.55em 0;
+}
+img {
+    width: 10em
+}
+hr {
+    border: 0.2px solid rgb(207, 207, 207)
+}
+.heading-year {
+    display: flex;
+    justify-content: space-between;
+}
+table {
+    border-collapse: collapse;
+    border: none;
+    width: 100%;
+}
+td {
+    padding: 8px;
+    text-align: center;
+    
+}
