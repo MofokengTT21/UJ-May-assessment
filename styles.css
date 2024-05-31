@@ -2,10 +2,9 @@ header {
     margin: 15px 0 ;
 }
 
-.header-info {
-    display: grid;
-    align-items: start;
-    justify-items: start;   
+.me {
+    margin: 0 0 0 -1em;
+    width: 11.6em;
 }
 
 h1 {
@@ -14,11 +13,9 @@ h1 {
 p {
     margin: -0.55em 0;
 }
-img {
-    width: 10em
-}
+
 hr {
-    border: 0.2px solid rgb(207, 207, 207)
+    border: 0.px solid rgb(255, 255, 255);
 }
 .heading-year {
     display: flex;

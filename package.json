@@ -19,14 +19,15 @@
   "keywords": [],
   "author": {
     "name": "",
-    "email": "",
+    "email": "tseko9164@gmail.com",
     "url": ""
   },
   "contributors": [],
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "test": ""
+    "test": "",
+    "serve": "vite preview"
   },
   "devDependencies": {
     "vite": "^5.2.12",
